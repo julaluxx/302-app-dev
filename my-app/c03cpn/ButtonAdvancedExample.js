@@ -13,7 +13,7 @@ const ButtonAdvancedExample = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>Advanced Button Example</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
 
       {/* Basic Button Example */}
       <Button

@@ -6,7 +6,7 @@ const ScrollViewAdvancedExample = () => {
     <ScrollView contentContainerStyle={styles.container}>
       {/* Advanced ScrollView Example */}
       <Text style={styles.title}>Advanced ScrollView Example</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
 
       {[...Array(20)].map((_, index) => (
         <Text key={index} style={styles.textItem}>
@@ -16,7 +16,7 @@ const ScrollViewAdvancedExample = () => {
 
       {/* Horizontal ScrollView Example */}
       <Text style={styles.title}>Horizontal ScrollView Example</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
 
       <ScrollView horizontal contentContainerStyle={styles.horizontalContent}>
         {[...Array(10)].map((_, index) => (

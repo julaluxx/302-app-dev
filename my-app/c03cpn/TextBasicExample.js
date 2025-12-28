@@ -5,7 +5,7 @@ const TextBasicExample = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Basic Text Example</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
       <Text style={styles.basicText}>
         Hello, this is a basic text example!
       </Text>

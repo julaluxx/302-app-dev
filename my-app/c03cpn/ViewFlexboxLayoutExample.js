@@ -5,7 +5,7 @@ const ViewFlexboxLayoutExample = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Flexbox Layout Example</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
 
       <View style={styles.box}>
         <Text>Box 1</Text>

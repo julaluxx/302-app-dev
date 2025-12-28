@@ -15,11 +15,11 @@ const ImageAdvancedExample = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>Image Example</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
 
       {/* Local Image Example */}
       <Image
-        source={require("../assets/local-image.png")}
+        source={require("../assets/id-pic.jpg")}
         style={styles.image}
       />
 
@@ -27,7 +27,7 @@ const ImageAdvancedExample = () => {
       <Text style={styles.title}>Remote Image Example</Text>
       <Image
         source={{
-          uri: "https://i.pinimg.com/736x/87/d3/eb/87d3ebd45e7a220c07b930f898c570a3.jpg",
+          uri: "https://media1.tenor.com/m/x8v1oNUOmg4AAAAC/rickroll-roll.gif",
         }}
         style={styles.image}
       />
@@ -36,7 +36,7 @@ const ImageAdvancedExample = () => {
       <Text style={styles.title}>Image Background Example</Text>
       <ImageBackground
         source={{
-          uri: "https://t3.ftcdn.net/jpg/00/57/08/46/360_F_57084608_ciyjhtwgdKSjeZwhDTNDyuMdWik8gNF9.jpg",
+          uri: "https://yt3.googleusercontent.com/ytc/AIdro_kDHdHkAhjfKcsPetJRGlV7LfMisfFfs9aL7OfRdeVIXQE=s900-c-k-c0x00ffffff-no-rj",
         }}
         style={styles.imageBackground}
       >
@@ -48,7 +48,7 @@ const ImageAdvancedExample = () => {
       {loading && <ActivityIndicator size="large" color="#0000ff" />}
       <Image
         source={{
-          uri: "https://www.veipd.org/earlyintervention/wp-content/uploads/2015/12/gift-281x300.jpg",
+          uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjt-ewgNomB7qqJH9Hn5VxQsnOgH_rRb2u9Q&s",
         }}
         style={styles.image}
         onLoadEnd={() => setLoading(false)}

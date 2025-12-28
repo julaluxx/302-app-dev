@@ -10,7 +10,7 @@ const TextInputAdvancedExample = () => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>TextInput Example</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
 
       {/* Basic TextInput Example */}
       <TextInput

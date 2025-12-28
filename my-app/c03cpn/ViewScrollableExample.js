@@ -5,7 +5,7 @@ const ViewScrollableExample = () => {
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <Text style={styles.title}>Scrollable View Example</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
 
       <View style={styles.box}>
         <Text>Item 1</Text>
