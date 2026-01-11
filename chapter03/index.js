@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo';
 
-import App from './c03cpn/TextInputAdvancedExample';
+import App from './components/TextInputAdvancedExample';
 
 registerRootComponent(App);
