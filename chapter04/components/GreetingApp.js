@@ -11,7 +11,7 @@ const GreetingApp = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>แบบค่าเดี่ยว (Primitive Props)</Text>
-            <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+            <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
             {/* ส่ง Props name ให้ Greeting */}
             <Greeting name="Somchai" />
             <Greeting name="Suda" />
