@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo';
 
-import App from './components/TextInputAdvancedExample';
+import App from './exercise/ToDoList';
 
 registerRootComponent(App);
