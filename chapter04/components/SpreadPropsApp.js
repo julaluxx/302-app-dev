@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-// คอมโพเนนต์แสดงข้อมูลผู้ใช้ โดยรับ Props name และ age
 const UserCard = ({ name, age }) => {
     return (
         <View>
@@ -11,15 +10,13 @@ const UserCard = ({ name, age }) => {
     );
 };
 
-// คอมโพเนนต์หลักที่ใช้ Spread Operator เพื่อส่ง Props หลายค่า
 const SpreadPropsApp = () => {
-    const userInfo = { name: 'Suchada', age: 35 }; // Object ที่เก็บข้อมูลผู้ใช้
+    const userInfo = { name: 'Julalak', age: 24 };
 
     return (
-        <View style={styles.container}>            
+        <View style={styles.container}>
             <Text style={styles.title}>แบบกระจายค่า (Spread Props)</Text>
-            <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
-            {/* ใช้ Spread Operator ส่ง Props */}
+            <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
             <UserCard {...userInfo} />
         </View>
     );

@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo';
 
-import App from './components/GreetingApp.js';
+import App from './exercise/MoodTracker';
 
 registerRootComponent(App);

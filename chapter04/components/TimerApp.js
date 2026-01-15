@@ -34,7 +34,7 @@ const TimerApp = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>แอปพลิเคชัน: ตัวจับเวลา (Timer App)</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
       {/* แสดงเวลาในรูปแบบวินาที */}
       <Text style={styles.timer}>{time}s</Text>
       <View style={styles.buttonContainer}>

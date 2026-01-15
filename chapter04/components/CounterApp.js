@@ -18,8 +18,8 @@ const CounterApp = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>แบบฟังก์ชัน (Callback Props)</Text>
-            <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
-            {/* แสดงค่าปัจจุบันของ count */}            
+            <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
+            {/* แสดงค่าปัจจุบันของ count */}
             <Text style={styles.text}>Count: {count}</Text>
             {/* ส่งฟังก์ชัน increaseCount ไปยัง Counter ผ่าน Props onIncrease */}
             <Counter onIncrease={increaseCount} />
@@ -29,7 +29,7 @@ const CounterApp = () => {
 
 const styles = StyleSheet.create({
     container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-    text: { fontSize: 20, marginBottom: 10 },    
+    text: { fontSize: 20, marginBottom: 10 },
     title: { fontSize: 20, fontWeight: "bold", position: "absolute", top: 50, },
     subtitle: { fontSize: 16, position: "absolute", top: 80, color: "#555", },
 });

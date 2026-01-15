@@ -23,7 +23,7 @@ const TriangleAreaApp = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Triangle Area Calculator</Text>
-            <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+            <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
 
             {/* ช่องกรอกค่าฐาน */}
             <TextInput
@@ -48,13 +48,13 @@ const TriangleAreaApp = () => {
 
             {/* แสดงผลลัพธ์ */}
             {area !== null && ( // ตรวจสอบว่า State area ไม่ใช่ null
-              <Text style={styles.result}>
-                {/* ตรวจสอบว่า area เป็นตัวเลขหรือไม่ */}
-                {isNaN(area)
-                  ? area // ถ้า area ไม่ใช่ตัวเลข (NaN) แสดงข้อความ "Invalid Input"
-                  : `Area: ${area} square units` // ถ้า area เป็นตัวเลข แสดงผลลัพธ์พื้นที่พร้อมหน่วย
-                }
-              </Text>
+                <Text style={styles.result}>
+                    {/* ตรวจสอบว่า area เป็นตัวเลขหรือไม่ */}
+                    {isNaN(area)
+                        ? area // ถ้า area ไม่ใช่ตัวเลข (NaN) แสดงข้อความ "Invalid Input"
+                        : `Area: ${area} square units` // ถ้า area เป็นตัวเลข แสดงผลลัพธ์พื้นที่พร้อมหน่วย
+                    }
+                </Text>
             )}
         </View>
     );
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     container: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20 },
     title: { fontSize: 20, fontWeight: "bold", position: "absolute", top: 50, },
     subtitle: { fontSize: 16, position: "absolute", top: 80, color: "#555", },
-    input: {borderWidth: 1,borderColor: '#ccc',padding: 10, marginBottom: 10, borderRadius: 5, width: '80%',},
+    input: { borderWidth: 1, borderColor: '#ccc', padding: 10, marginBottom: 10, borderRadius: 5, width: '80%', },
     result: { fontSize: 18, marginTop: 20, color: '#333' },
 });
 

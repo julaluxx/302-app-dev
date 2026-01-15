@@ -14,12 +14,12 @@ const UserCard = ({ user }) => {
 
 // คอมโพเนนต์หลักที่ส่ง Object user ไปยัง UserCard
 const UserCardApp = () => {
-    const userInfo = { name: 'Anucha', age: 28 }; // Object ที่เก็บข้อมูลผู้ใช้
+    const userInfo = { name: 'Julalak', age: 24 }; // Object ที่เก็บข้อมูลผู้ใช้
 
     return (
-        <View style={styles.container}>            
+        <View style={styles.container}>
             <Text style={styles.title}>แบบหลายค่า (Object Props)</Text>
-            <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+            <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
             {/* ส่ง Object userInfo ให้ UserCard */}
             <UserCard user={userInfo} />
         </View>
@@ -28,7 +28,7 @@ const UserCardApp = () => {
 
 const styles = StyleSheet.create({
     container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-    text: { fontSize: 18 },    
+    text: { fontSize: 18 },
     title: { fontSize: 20, fontWeight: "bold", position: "absolute", top: 50, },
     subtitle: { fontSize: 16, position: "absolute", top: 80, color: "#555", },
 });

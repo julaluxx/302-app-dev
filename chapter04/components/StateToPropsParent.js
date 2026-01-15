@@ -13,7 +13,7 @@ const StateToPropsParent = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>การส่งค่า State ไปยังคอมโพเนนต์ลูกผ่าน Props</Text>
-      <Text style={styles.subtitle}>Programmer Name: Satien Janpla</Text>
+      <Text style={styles.subtitle}>Programmer Name: Julalak Kinnara</Text>
       {/* ส่ง State count ไปยัง CounterDisplay ผ่าน Props */}
       <CounterDisplay count={count} />
       <Button title="Increase" onPress={() => setCount(count + 1)} />
@@ -24,8 +24,8 @@ const StateToPropsParent = () => {
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
   text: { fontSize: 20, marginBottom: 10 },
-  title: { fontSize: 18, fontWeight: "bold", position: "absolute", top: 50, },
-  subtitle: { fontSize: 16, position: "absolute", top: 80, color: "#555", },
+  title: { textAlign: "center", fontSize: 18, fontWeight: "bold", position: "absolute", top: 50, },
+  subtitle: { textAlign: "center", fontSize: 16, position: "absolute", top: 100, color: "#555", },
 });
 
 export default StateToPropsParent;
