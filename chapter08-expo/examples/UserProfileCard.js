@@ -1,4 +1,3 @@
-import React from "react";
 import { View, Text, Image } from "react-native";
 
 import {
@@ -14,40 +13,33 @@ export default function UserProfileCard({ user }) {
   return (
     <View
       style={[
-        bgStyles.cardBackgroundLight,
+        bgStyles.cardBackground,
         borderStyles.shadowM,
         borderStyles.roundedM,
         spaceStyles.cardSpacing,
         spaceStyles.paddingM,
+        layoutStyles.alignCenter,
       ]}
     >
-      <View
-        style={[
-          layoutStyles.row,
-          layoutStyles.alignCenter,
-          layoutStyles.justifyBetween,
-        ]}
-      >
-        <Text style={typoStyles.productTitle}>{user.name}</Text>
-        <Text style={typoStyles.textSubtitle}>{user.email}</Text>
-      </View>
-      
-      <Text style={[typoStyles.textDescription, spaceStyles.marginTopS]}>
-        {user.description}
-      </Text>
-
       {!!user.imageUrl && (
         <Image
           source={{ uri: user.imageUrl }}
-          style={{
-            width: "100%",
-            height: 180,
-            borderRadius: 12,
-            marginTop: 10,
-          }}
+          style={[
+            sizeStyles.sizeM,
+            borderStyles.roundedL,
+            spaceStyles.marginBottomM,
+          ]}
           resizeMode="cover"
         />
       )}
+      <View style={[layoutStyles.alignCenter]}>
+        <Text style={[typoStyles.textTitle, spaceStyles.marginBottomS]}>{user.name}</Text>
+        <Text style={[typoStyles.textRegular, spaceStyles.marginBottomXS]}>{user.email}</Text>
+        <Text style={[typoStyles.textDescription, spaceStyles.marginBottomXS]}>{user.role}</Text>
+        <Text style={[typoStyles.textLabel, { color: user.isActive ? 'green' : 'red' }]}>
+          {user.isActive ? "Online 🟢" : "Offline 🔴"}
+        </Text>
+      </View>
     </View>
   );
 }
