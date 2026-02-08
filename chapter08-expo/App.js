@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
+import UserProfileCard from './examples/UserProfileCard';
 
-export default function App() {
+export default function App({ user }) {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      {user ? (
+        <UserProfileCard user={user} />
+      ) : (
+        <Text style={styles.text}>กรุณาเข้าสู่ระบบ</Text>
+      )}
       <StatusBar style="auto" />
     </View>
   );
@@ -16,5 +21,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20,
+  },
+  text: {
+    fontSize: 18,
+    marginBottom: 10,
+    color: '#555',
   },
 });
