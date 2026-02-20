@@ -1,0 +1,10 @@
+services:
+  xampp:
+    image: tomsik68/xampp:latest
+    container_name: db-server
+    privileged: true
+    ports:
+      - "8088:80"
+    volumes:
+      - ~{root folder}:/opt/lampp/htdocs/{database folder}:Z  ## รันบน Local Machine
+    restart: unless-stopped
