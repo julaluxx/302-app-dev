@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import { View, Text, FlatList, StyleSheet } from "react-native";
 import axios from "axios";
 
+const API_URL = "https://fantastic-bassoon-x479wp54wpgfp477-8088.app.github.dev/chapter09";
+
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost/AxiosGetExample/getTask.php")
+    axios.get(API_URL + "/getTask.php")
       .then(response => setTasks(response.data.tasks))
       .catch(error => console.error("เกิดข้อผิดพลาด:", error));
   }, []);

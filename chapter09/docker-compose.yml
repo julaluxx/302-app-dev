@@ -1,10 +1,10 @@
 services:
   xampp:
     image: tomsik68/xampp:latest
-    container_name: db-server
+    container_name: ch9-db-server
     privileged: true
     ports:
       - "8088:80"
     volumes:
-      - ~{root folder}:/opt/lampp/htdocs/{database folder}:Z  ## รันบน Local Machine
+      - /workspaces/302-app-dev/chapter09:/opt/lampp/htdocs/chapter09:Z  ## รันบน GithubWorkspace
     restart: unless-stopped
