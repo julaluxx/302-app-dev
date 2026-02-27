@@ -1,0 +1,145 @@
+/* style.css */
+
+/* ===============================
+   ภาพหนังสือ (Book Image Styles)
+   =============================== */
+.book-cover {
+    width: 100%;
+    height: 220px;
+    object-fit: contain; /* รักษาสัดส่วนของภาพ */
+    border-bottom: 1px solid #ddd;
+}
+
+.custom-image {
+    width: 100%;
+    height: 250px; /* ความสูงคงที่ */
+    object-fit: contain; /* รักษาสัดส่วนของภาพ */
+    margin-top: 20px;
+}
+
+/* ===============================
+   การ์ดหนังสือ (Card Layout)
+   =============================== */
+.card {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    min-height: 2.25rem;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ===============================
+   ปุ่ม (Buttons)
+   =============================== */
+.btn-primary,
+.btn-success,
+.btn-danger {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-success:hover {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+/* ===============================
+   Navbar & Layout
+   =============================== */
+.custom-container {
+    padding-left: 50px;
+}
+
+.nav-item-custom {
+    margin-right: 50px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* ===============================
+   การจัดวางทั่วไป (Global Layout)
+   =============================== */
+body {
+    background-color: #f8f9fa;
+    font-family: "Prompt", "Sarabun", sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+/* ===============================
+   ฟุตเตอร์ (Footer)
+   =============================== */
+footer {
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px 0;
+    color: #777;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* ===============================
+   ฟอร์ม (Forms)
+   =============================== */
+.form-control {
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+}
+
+/* ===============================
+   การจัดการข้อความแจ้งเตือน (Alerts)
+   =============================== */
+.alert {
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+/* ===============================
+   ปรับแต่ง Responsive
+   =============================== */
+@media (max-width: 767.98px) {
+    .custom-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav-item-custom {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .book-cover,
+    .custom-image {
+        height: 180px;
+    }
+}
